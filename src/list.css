@@ -1,0 +1,38 @@
+.list{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.list-item{
+    border: 1px solid #333;  
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.list-item.done{
+    text-decoration: line-through;
+}
+
+.list-item-title{
+    margin-bottom: 10px;
+}
+
+.list-add-item-info{
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+label{
+    display: block;
+    margin: 5px 0;
+}
+
+.modal{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 1px solid #333;
+    background: #fff;
+    padding: 20px;
+}
