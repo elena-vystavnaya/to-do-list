@@ -1,10 +1,12 @@
-// @include font-face(Roboto-Regular, fonts/Roboto/Roboto-Regular);
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+    }
+}
 
 
-// @font-face {
-// 	font-family: "Roboto-Regular";
-// 	src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
-// 		 url("../fonts/Roboto/Roboto-Regular.woff") format("woff"),
-// 		 url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-// }
-
+@include font-face('RobotoRegular', "/fonts/Roboto/Roboto-Regular/Roboto", 500, normal);
